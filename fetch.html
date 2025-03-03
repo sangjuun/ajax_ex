@@ -10,6 +10,11 @@
           document.querySelector('article').innerHTML = text;
         })
       })
+      fetch('javascript').then(function(response){
+        if(response.status == '404'){
+          alert('Not Found')
+        }
+      })
     " />
 
   </body>
